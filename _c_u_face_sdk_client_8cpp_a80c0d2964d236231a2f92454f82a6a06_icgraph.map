@@ -1,0 +1,4 @@
+<map id="CUFaceSDK_FaceExtractTopN" name="CUFaceSDK_FaceExtractTopN">
+<area shape="rect" id="node2" href="$_c_u_face_sdk_client_8cpp.html#a18ee3e9ef94fedfa98e451374b584f88" title="입력 인자로 넘어온 이미지의 info data를 생성 후 그 포인터를 반환한다. 생성된 데이터는 header+info 구�..." alt="" coords="283,5,481,32"/>
+<area shape="rect" id="node3" href="$class_face_s_d_k_wrapper.html#a81b841f6e588fd1d1fcae0b010389184" title="FaceSDKWrapper::FaceExtractTopN" alt="" coords="263,56,501,83"/>
+</map>

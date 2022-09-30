@@ -1,0 +1,4 @@
+<map id="CUFaceSDK_GetConfigValue" name="CUFaceSDK_GetConfigValue">
+<area shape="rect" id="node2" href="$_c_u_face_sdk_client_8cpp.html#a18ee3e9ef94fedfa98e451374b584f88" title="입력 인자로 넘어온 이미지의 info data를 생성 후 그 포인터를 반환한다. 생성된 데이터는 header+info 구�..." alt="" coords="252,5,451,32"/>
+<area shape="rect" id="node3" href="$class_face_s_d_k_wrapper.html#a5dfe43819f94495bf8a9ff37ba9fc4cb" title="FaceSDKWrapper::GetConfig\lValue" alt="" coords="254,57,449,98"/>
+</map>

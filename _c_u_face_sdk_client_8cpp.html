@@ -1,0 +1,1097 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CUFaceSDK: CUFaceSdkClient.cpp 파일 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="CUBOX.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CUFaceSDK
+   &#160;<span id="projectnumber">1.9.6</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','검색');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_c_u_face_sdk_client_8cpp.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">함수</a> &#124;
+<a href="#var-members">변수</a>  </div>
+  <div class="headertitle">
+<div class="title">CUFaceSdkClient.cpp 파일 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;CUFaceSdkClient.hpp&quot;</code><br />
+<code>#include &quot;Util.hpp&quot;</code><br />
+<code>#include &quot;FilePathUtil.hpp&quot;</code><br />
+<code>#include &quot;Perf.hpp&quot;</code><br />
+<code>#include &quot;slog.hpp&quot;</code><br />
+<code>#include &quot;CULicense.hpp&quot;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &quot;so_loader.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+CUFaceSdkClient.cpp에 대한 include 의존 그래프</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp__incl.png" border="0" usemap="#_c_u_face_sdk_client_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ac19b6b1a8b69dccf87e313091d267d69"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#ac19b6b1a8b69dccf87e313091d267d69">CUFaceSDK_Init</a> (void *root_dir, void *config_filepath)</td></tr>
+<tr class="memdesc:ac19b6b1a8b69dccf87e313091d267d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">gallery, model, config로드 등 SDK를 초기화 한다.  <a href="#ac19b6b1a8b69dccf87e313091d267d69">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ac19b6b1a8b69dccf87e313091d267d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79724df7d60eba115a5b2ce8edb1dc07"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a79724df7d60eba115a5b2ce8edb1dc07">CUFaceSDK_Release</a> (void *handle)</td></tr>
+<tr class="memdesc:a79724df7d60eba115a5b2ce8edb1dc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUFaceSDKClient 객체를 해제한다.  <a href="#a79724df7d60eba115a5b2ce8edb1dc07">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a79724df7d60eba115a5b2ce8edb1dc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c0d2964d236231a2f92454f82a6a06"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a80c0d2964d236231a2f92454f82a6a06">CUFaceSDK_FaceExtractTopN</a> (void *handle, int rows, int cols, int type, void *data, FaceExtractResult *retValue, int topN, bool isCropped, bool useFlip)</td></tr>
+<tr class="memdesc:a80c0d2964d236231a2f92454f82a6a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">입력 인자로 들어온 이미지들의 mask score, landmark, headpose, embedding을 구하여 버퍼에 담고 결과값의 사이즈를 반환한다.  <a href="#a80c0d2964d236231a2f92454f82a6a06">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a80c0d2964d236231a2f92454f82a6a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee2b92be47b85522cbcb2d5090d8757"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#aeee2b92be47b85522cbcb2d5090d8757">CUFaceSDK_MatchFeature</a> (void *handle, const char *galleryImage, const long galleryImageLen, const char *targetImage, const long targetImageLen)</td></tr>
+<tr class="memdesc:aeee2b92be47b85522cbcb2d5090d8757"><td class="mdescLeft">&#160;</td><td class="mdescRight">입력 인자로 넘겨진 두 이미지의 유사도를 구한다.  <a href="#aeee2b92be47b85522cbcb2d5090d8757">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aeee2b92be47b85522cbcb2d5090d8757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ee3e9ef94fedfa98e451374b584f88"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a18ee3e9ef94fedfa98e451374b584f88">CUFaceSDK_CreateTemplate</a> (void *handle, int rows, int cols, int type, void *data, int topN, bool isCropped, bool useFlip)</td></tr>
+<tr class="memdesc:a18ee3e9ef94fedfa98e451374b584f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">입력 인자로 넘어온 이미지의 info data를 생성 후 그 포인터를 반환한다. 생성된 데이터는 header+info 구성으로 되어 있으며 infos에는 bboxinfo, head pose angles, landmarks, embedding 정보가 들어간다.  <a href="#a18ee3e9ef94fedfa98e451374b584f88">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a18ee3e9ef94fedfa98e451374b584f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b12ea2505415fc1302b10f88a191522"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a5b12ea2505415fc1302b10f88a191522">CUFaceSDK_DeleteTemplate</a> (void *templateHandle)</td></tr>
+<tr class="memdesc:a5b12ea2505415fc1302b10f88a191522"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUFaceSDK_CreateTemplate에서 생성한 버퍼를 해제시켜준다.  <a href="#a5b12ea2505415fc1302b10f88a191522">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a5b12ea2505415fc1302b10f88a191522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44daaf2674dfdb89e01c1f943795916"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#ad44daaf2674dfdb89e01c1f943795916">CUFaceSDK_MatchTemplate</a> (void *handle, void *template1, int t_index1, void *template2, int t_index2)</td></tr>
+<tr class="memdesc:ad44daaf2674dfdb89e01c1f943795916"><td class="mdescLeft">&#160;</td><td class="mdescRight">입력 인자로 넘겨진 두 template의 유사도를 구한다.  <a href="#ad44daaf2674dfdb89e01c1f943795916">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ad44daaf2674dfdb89e01c1f943795916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ac141423b84c694fb3dcc7b8bba020"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#ac4ac141423b84c694fb3dcc7b8bba020">CUFaceSDK_ConvertPath</a> (void *handle, const char *filepath)</td></tr>
+<tr class="separator:ac4ac141423b84c694fb3dcc7b8bba020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9df98684cf9d1de15d84c3a54633ef1"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#ab9df98684cf9d1de15d84c3a54633ef1">CUFaceSDK_GetVersion</a> (void *handle)</td></tr>
+<tr class="separator:ab9df98684cf9d1de15d84c3a54633ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0011cd74066e47836c30219750fc100"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#ae0011cd74066e47836c30219750fc100">CUFaceSDK_GetDebugInfo</a> (void *handle)</td></tr>
+<tr class="memdesc:ae0011cd74066e47836c30219750fc100"><td class="mdescLeft">&#160;</td><td class="mdescRight">face detection model, reid model, covid mask detect model의 경로를 출력한다.  <a href="#ae0011cd74066e47836c30219750fc100">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ae0011cd74066e47836c30219750fc100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ceca829a948f3d610ab2c34963fba13"><td class="memItemLeft" align="right" valign="top">CUFACE_SDK_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a5ceca829a948f3d610ab2c34963fba13">CUFaceSDK_GetConfigValue</a> (void *handle, const char *value)</td></tr>
+<tr class="separator:a5ceca829a948f3d610ab2c34963fba13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063719fc370bd06ff70fb3d3aac2c194"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a063719fc370bd06ff70fb3d3aac2c194">CreateCURecognizer</a> ()</td></tr>
+<tr class="memdesc:a063719fc370bd06ff70fb3d3aac2c194"><td class="mdescLeft">&#160;</td><td class="mdescRight">클래스의 인스턴스를 생성한다.  <a href="#a063719fc370bd06ff70fb3d3aac2c194">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a063719fc370bd06ff70fb3d3aac2c194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6e328f0e0b6e646f1162777571a3e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#afb6e328f0e0b6e646f1162777571a3e0">Init</a> (void *pRecognizer, void *root_dir, void *config_filepath)</td></tr>
+<tr class="memdesc:afb6e328f0e0b6e646f1162777571a3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">gallery, model, config로드 등 SDK를 초기화 한다.  <a href="#afb6e328f0e0b6e646f1162777571a3e0">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:afb6e328f0e0b6e646f1162777571a3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757434d6a5c7189eb8f5a22a92e22aef"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a757434d6a5c7189eb8f5a22a92e22aef">FaceDetection</a> (void *pRecognizer, const char *jpgData, int imageLen, CSResultVal *csresult)</td></tr>
+<tr class="memdesc:a757434d6a5c7189eb8f5a22a92e22aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">얼굴 검출  <a href="#a757434d6a5c7189eb8f5a22a92e22aef">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a757434d6a5c7189eb8f5a22a92e22aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b28664fc39af40ddc10c63b9953226a"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a9b28664fc39af40ddc10c63b9953226a">FaceExtraction</a> (void *pRecognizer, const char *jpgData, int imageLen, CSResultVal *csresult, char *embedding, int embedding_size, bool isCropped)</td></tr>
+<tr class="memdesc:a9b28664fc39af40ddc10c63b9953226a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feature 추출  <a href="#a9b28664fc39af40ddc10c63b9953226a">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a9b28664fc39af40ddc10c63b9953226a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3bc90b285afe26ef914d465469bb5d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a7f3bc90b285afe26ef914d465469bb5d">MatchFeature</a> (void *pRecognizer, const char *srcFeature, int srcFeatureLen, const char *destFeature, int destFeatureLen)</td></tr>
+<tr class="memdesc:a7f3bc90b285afe26ef914d465469bb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feature 매칭  <a href="#a7f3bc90b285afe26ef914d465469bb5d">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a7f3bc90b285afe26ef914d465469bb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a04aaba6cac7acb8f564865dc56122"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a61a04aaba6cac7acb8f564865dc56122">GetConfigValue</a> (void *pRecognizer, void *value)</td></tr>
+<tr class="separator:a61a04aaba6cac7acb8f564865dc56122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688cddf0b1b4833a6188d4d678caec3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a688cddf0b1b4833a6188d4d678caec3f">DisposeCURecognizer</a> (void *pRecognizer)</td></tr>
+<tr class="memdesc:a688cddf0b1b4833a6188d4d678caec3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리 해제  <a href="#a688cddf0b1b4833a6188d4d678caec3f">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a688cddf0b1b4833a6188d4d678caec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+변수</h2></td></tr>
+<tr class="memitem:a19086921dddd78c83650880e1e870d9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a19086921dddd78c83650880e1e870d9d">NS_CU_USING</a></td></tr>
+<tr class="separator:a19086921dddd78c83650880e1e870d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b71aa8ec6dbee15d0522e69b2cabe2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a51b71aa8ec6dbee15d0522e69b2cabe2">TEMPLATE_HEADER_SIZE</a> = 2</td></tr>
+<tr class="separator:a51b71aa8ec6dbee15d0522e69b2cabe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f062b3649a285153fb1b9506d338ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a00f062b3649a285153fb1b9506d338ed">TEMPLATE_META_SIZE</a> = 5 + 3 + 1</td></tr>
+<tr class="separator:a00f062b3649a285153fb1b9506d338ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47435e729cbc451ad4c238d7d6bae3e1"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#a47435e729cbc451ad4c238d7d6bae3e1">TEMPLATE_EMBEDDING_SIZE</a> = sizeof(FaceExtractResult::embedding) / sizeof(float)</td></tr>
+<tr class="separator:a47435e729cbc451ad4c238d7d6bae3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8a269d61c49460c2051718eb40c729"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_u_face_sdk_client_8cpp.html#acd8a269d61c49460c2051718eb40c729">TEMPLATE_SIZE</a> = (<a class="el" href="_c_u_face_sdk_client_8cpp.html#a00f062b3649a285153fb1b9506d338ed">TEMPLATE_META_SIZE</a> + <a class="el" href="_c_u_face_sdk_client_8cpp.html#a47435e729cbc451ad4c238d7d6bae3e1">TEMPLATE_EMBEDDING_SIZE</a>)</td></tr>
+<tr class="separator:acd8a269d61c49460c2051718eb40c729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">함수 문서화</h2>
+<a id="a063719fc370bd06ff70fb3d3aac2c194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063719fc370bd06ff70fb3d3aac2c194">&#9670;&nbsp;</a></span>CreateCURecognizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* CreateCURecognizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>클래스의 인스턴스를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>생성된 객체의 포인터 </dd></dl>
+
+</div>
+</div>
+<a id="ac4ac141423b84c694fb3dcc7b8bba020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ac141423b84c694fb3dcc7b8bba020">&#9670;&nbsp;</a></span>CUFaceSDK_ConvertPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CUFaceSDK_ConvertPath </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filepath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_ac4ac141423b84c694fb3dcc7b8bba020_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_ac4ac141423b84c694fb3dcc7b8bba020_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_ac4ac141423b84c694fb3dcc7b8bba020_icgraph" id="_c_u_face_sdk_client_8cpp_ac4ac141423b84c694fb3dcc7b8bba020_icgraph">
+<area shape="rect" id="node2" href="class_face_s_d_k_wrapper.html#a9cc41f44cd3979be20ce12565c5c4762" title="FaceSDKWrapper::ConvertSdkPath" alt="" coords="232,5,464,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18ee3e9ef94fedfa98e451374b584f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ee3e9ef94fedfa98e451374b584f88">&#9670;&nbsp;</a></span>CUFaceSDK_CreateTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * CUFaceSDK_CreateTemplate </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>topN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isCropped</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useFlip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>입력 인자로 넘어온 이미지의 info data를 생성 후 그 포인터를 반환한다. 생성된 데이터는 header+info 구성으로 되어 있으며 infos에는 bboxinfo, head pose angles, landmarks, embedding 정보가 들어간다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CUFaceSDKClient handle </td></tr>
+    <tr><td class="paramname">rows</td><td>cv::Mat image의 rows(행) </td></tr>
+    <tr><td class="paramname">cols</td><td>cv::Mat image의 colums(열) </td></tr>
+    <tr><td class="paramname">type</td><td>cv::Mat image element data type </td></tr>
+    <tr><td class="paramname">data</td><td>cv::Mat image data </td></tr>
+    <tr><td class="paramname">topN</td><td>입력 이미지에서 handling faces 개수 </td></tr>
+    <tr><td class="paramname">isCropped</td><td>input image가 cropped bbox image이면 true, 아니면 false </td></tr>
+    <tr><td class="paramname">useFlip</td><td>이미지를 좌우 반전시켜 feature를 한번 더 추출한 뒤 연산하여 나온 결과 값을 feature로 쓴다. 정확도가 올라가지면 reid를 한번 더 하기 때문에 속도가 느려진다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>void* header 정보와 results를 담고 있는 버퍼 포인터 </dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_a18ee3e9ef94fedfa98e451374b584f88_cgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_a18ee3e9ef94fedfa98e451374b584f88_cgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_a18ee3e9ef94fedfa98e451374b584f88_cgraph" id="_c_u_face_sdk_client_8cpp_a18ee3e9ef94fedfa98e451374b584f88_cgraph">
+<area shape="rect" id="node2" href="_c_u_face_sdk_client_8cpp.html#a80c0d2964d236231a2f92454f82a6a06" title="입력 인자로 들어온 이미지들의 mask score, landmark, headpose, embedding을 구하여 버퍼에 담고 결과값의..." alt="" coords="252,5,461,32"/>
+<area shape="rect" id="node3" href="_c_u_face_sdk_client_8cpp.html#a5ceca829a948f3d610ab2c34963fba13" title="CUFaceSDK_GetConfigValue" alt="" coords="257,56,456,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b12ea2505415fc1302b10f88a191522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b12ea2505415fc1302b10f88a191522">&#9670;&nbsp;</a></span>CUFaceSDK_DeleteTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CUFaceSDK_DeleteTemplate </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>templateHandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CUFaceSDK_CreateTemplate에서 생성한 버퍼를 해제시켜준다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">templateHandle</td><td>CUFaceSDK_CreateTemplate에서 생성된버퍼 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80c0d2964d236231a2f92454f82a6a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c0d2964d236231a2f92454f82a6a06">&#9670;&nbsp;</a></span>CUFaceSDK_FaceExtractTopN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CUFaceSDK_FaceExtractTopN </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FaceExtractResult *&#160;</td>
+          <td class="paramname"><em>retValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>topN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isCropped</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useFlip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>입력 인자로 들어온 이미지들의 mask score, landmark, headpose, embedding을 구하여 버퍼에 담고 결과값의 사이즈를 반환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CUFaceSDKClient handle </td></tr>
+    <tr><td class="paramname">rows</td><td>cv::Mat image의 rows(행) </td></tr>
+    <tr><td class="paramname">cols</td><td>cv::Mat image의 colums(열) </td></tr>
+    <tr><td class="paramname">type</td><td>cv::Mat image element data type </td></tr>
+    <tr><td class="paramname">data</td><td>cv::Mat image data </td></tr>
+    <tr><td class="paramname">retValue</td><td>추출 결과를 담을 버퍼 </td></tr>
+    <tr><td class="paramname">topN</td><td>입력 이미지에서 handling faces 개수 </td></tr>
+    <tr><td class="paramname">isCropped</td><td>input image가 cropped bbox image이면 true, 아니면 false </td></tr>
+    <tr><td class="paramname">useFlip</td><td>이미지를 좌우 반전시켜 feature를 한번 더 추출한 뒤 연산하여 나온 결과 값을 feature로 쓴다. 정확도가 올라가지면 reid를 한번 더 하기 때문에 속도가 느려진다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>int 추출 결과 값의 사이즈 </dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_a80c0d2964d236231a2f92454f82a6a06_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_a80c0d2964d236231a2f92454f82a6a06_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_a80c0d2964d236231a2f92454f82a6a06_icgraph" id="_c_u_face_sdk_client_8cpp_a80c0d2964d236231a2f92454f82a6a06_icgraph">
+<area shape="rect" id="node2" href="_c_u_face_sdk_client_8cpp.html#a18ee3e9ef94fedfa98e451374b584f88" title="입력 인자로 넘어온 이미지의 info data를 생성 후 그 포인터를 반환한다. 생성된 데이터는 header+info 구�..." alt="" coords="283,5,481,32"/>
+<area shape="rect" id="node3" href="class_face_s_d_k_wrapper.html#a81b841f6e588fd1d1fcae0b010389184" title="FaceSDKWrapper::FaceExtractTopN" alt="" coords="263,56,501,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ceca829a948f3d610ab2c34963fba13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ceca829a948f3d610ab2c34963fba13">&#9670;&nbsp;</a></span>CUFaceSDK_GetConfigValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CUFaceSDK_GetConfigValue </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_a5ceca829a948f3d610ab2c34963fba13_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_a5ceca829a948f3d610ab2c34963fba13_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_a5ceca829a948f3d610ab2c34963fba13_icgraph" id="_c_u_face_sdk_client_8cpp_a5ceca829a948f3d610ab2c34963fba13_icgraph">
+<area shape="rect" id="node2" href="_c_u_face_sdk_client_8cpp.html#a18ee3e9ef94fedfa98e451374b584f88" title="입력 인자로 넘어온 이미지의 info data를 생성 후 그 포인터를 반환한다. 생성된 데이터는 header+info 구�..." alt="" coords="252,5,451,32"/>
+<area shape="rect" id="node3" href="class_face_s_d_k_wrapper.html#a5dfe43819f94495bf8a9ff37ba9fc4cb" title="FaceSDKWrapper::GetConfig\lValue" alt="" coords="254,57,449,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0011cd74066e47836c30219750fc100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0011cd74066e47836c30219750fc100">&#9670;&nbsp;</a></span>CUFaceSDK_GetDebugInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CUFaceSDK_GetDebugInfo </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>face detection model, reid model, covid mask detect model의 경로를 출력한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CUFaceSDKClient Handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>const char* debug infos </dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_ae0011cd74066e47836c30219750fc100_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_ae0011cd74066e47836c30219750fc100_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_ae0011cd74066e47836c30219750fc100_icgraph" id="_c_u_face_sdk_client_8cpp_ae0011cd74066e47836c30219750fc100_icgraph">
+<area shape="rect" id="node2" href="class_face_s_d_k_wrapper.html#aa9b7a7b754638fe44823b1e0211bc56f" title="face Detection model, reid model, covid mask detector mode의 경로를 출력한다. " alt="" coords="240,5,457,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab9df98684cf9d1de15d84c3a54633ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9df98684cf9d1de15d84c3a54633ef1">&#9670;&nbsp;</a></span>CUFaceSDK_GetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CUFaceSDK_GetVersion </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_ab9df98684cf9d1de15d84c3a54633ef1_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_ab9df98684cf9d1de15d84c3a54633ef1_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_ab9df98684cf9d1de15d84c3a54633ef1_icgraph" id="_c_u_face_sdk_client_8cpp_ab9df98684cf9d1de15d84c3a54633ef1_icgraph">
+<area shape="rect" id="node2" href="class_face_s_d_k_wrapper.html#a60affb1ec3e92d01fe9ffc0404e0de51" title="FaceSDKWrapper::GetVersion" alt="" coords="224,5,425,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac19b6b1a8b69dccf87e313091d267d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19b6b1a8b69dccf87e313091d267d69">&#9670;&nbsp;</a></span>CUFaceSDK_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * CUFaceSDK_Init </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>root_dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>config_filepath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gallery, model, config로드 등 SDK를 초기화 한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root_dir</td><td>sdk위치 경로 </td></tr>
+    <tr><td class="paramname">config_filepath</td><td>FaceSample.json 파일 경로 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>void* CUFaceSDKClient handle </dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_ac19b6b1a8b69dccf87e313091d267d69_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_ac19b6b1a8b69dccf87e313091d267d69_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_ac19b6b1a8b69dccf87e313091d267d69_icgraph" id="_c_u_face_sdk_client_8cpp_ac19b6b1a8b69dccf87e313091d267d69_icgraph">
+<area shape="rect" id="node2" href="class_face_s_d_k_wrapper.html#a176ae9154224d90eb5f9a19733c5c17b" title="FaceSDKWrapper::Init" alt="" coords="177,5,332,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeee2b92be47b85522cbcb2d5090d8757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee2b92be47b85522cbcb2d5090d8757">&#9670;&nbsp;</a></span>CUFaceSDK_MatchFeature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CUFaceSDK_MatchFeature </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>galleryImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const long&#160;</td>
+          <td class="paramname"><em>galleryImageLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>targetImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const long&#160;</td>
+          <td class="paramname"><em>targetImageLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>입력 인자로 넘겨진 두 이미지의 유사도를 구한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CUFaceSDKClient Handle </td></tr>
+    <tr><td class="paramname">galleryImage</td><td>비교 대상 이미지1 </td></tr>
+    <tr><td class="paramname">galleryImageLen</td><td>비교 대상 이미지1의 크기 </td></tr>
+    <tr><td class="paramname">targetImage</td><td>비교 대상 이미지2 </td></tr>
+    <tr><td class="paramname">targetImageLen</td><td>비교 대상 이미지2의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>float 이미지1과 이미지2의 유사 점수 </dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_aeee2b92be47b85522cbcb2d5090d8757_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_aeee2b92be47b85522cbcb2d5090d8757_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_aeee2b92be47b85522cbcb2d5090d8757_icgraph" id="_c_u_face_sdk_client_8cpp_aeee2b92be47b85522cbcb2d5090d8757_icgraph">
+<area shape="rect" id="node2" href="_c_u_face_sdk_client_8cpp.html#ad44daaf2674dfdb89e01c1f943795916" title="입력 인자로 넘겨진 두 template의 유사도를 구한다. " alt="" coords="250,5,446,32"/>
+<area shape="rect" id="node3" href="class_face_s_d_k_wrapper.html#ac1dd8f20ba469ba66b5b75270aa80498" title="입력 인자로 넘겨진 두 이미지의 유사도를 구한다. " alt="" coords="240,56,456,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad44daaf2674dfdb89e01c1f943795916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44daaf2674dfdb89e01c1f943795916">&#9670;&nbsp;</a></span>CUFaceSDK_MatchTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CUFaceSDK_MatchTemplate </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>template1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t_index1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>template2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t_index2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>입력 인자로 넘겨진 두 template의 유사도를 구한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CUFaceSDKClient handle </td></tr>
+    <tr><td class="paramname">template1</td><td>비교할 template1 버퍼 포인터 </td></tr>
+    <tr><td class="paramname">t_index1</td><td>template1의 data chunk 개수 </td></tr>
+    <tr><td class="paramname">template2</td><td>비교할 template2 버퍼 포인터 </td></tr>
+    <tr><td class="paramname">t_index2</td><td>template2의 data chunk 개수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>float template1과 template2의 유사 점수 </dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_ad44daaf2674dfdb89e01c1f943795916_cgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_ad44daaf2674dfdb89e01c1f943795916_cgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_ad44daaf2674dfdb89e01c1f943795916_cgraph" id="_c_u_face_sdk_client_8cpp_ad44daaf2674dfdb89e01c1f943795916_cgraph">
+<area shape="rect" id="node2" href="_c_u_face_sdk_client_8cpp.html#aeee2b92be47b85522cbcb2d5090d8757" title="입력 인자로 넘겨진 두 이미지의 유사도를 구한다. " alt="" coords="249,5,436,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a79724df7d60eba115a5b2ce8edb1dc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79724df7d60eba115a5b2ce8edb1dc07">&#9670;&nbsp;</a></span>CUFaceSDK_Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CUFaceSDK_Release </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CUFaceSDKClient 객체를 해제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CUFaceSDKClient handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="_c_u_face_sdk_client_8cpp_a79724df7d60eba115a5b2ce8edb1dc07_icgraph.png" border="0" usemap="#_c_u_face_sdk_client_8cpp_a79724df7d60eba115a5b2ce8edb1dc07_icgraph" alt=""/></div>
+<map name="_c_u_face_sdk_client_8cpp_a79724df7d60eba115a5b2ce8edb1dc07_icgraph" id="_c_u_face_sdk_client_8cpp_a79724df7d60eba115a5b2ce8edb1dc07_icgraph">
+<area shape="rect" id="node2" href="class_face_s_d_k_wrapper.html#a6c62313d0aee1f476c4db8f0bb298ebd" title="FaceSDKWrapper::~FaceSDKWrapper" alt="" coords="208,5,459,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a688cddf0b1b4833a6188d4d678caec3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688cddf0b1b4833a6188d4d678caec3f">&#9670;&nbsp;</a></span>DisposeCURecognizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DisposeCURecognizer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pRecognizer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>메모리 해제 </p>
+<p>CreateCURecognizer에서 생성한 객체의 메모리를 해제한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRecognizer</td><td>CreateCURecognizer에서 생성한 객체 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a757434d6a5c7189eb8f5a22a92e22aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757434d6a5c7189eb8f5a22a92e22aef">&#9670;&nbsp;</a></span>FaceDetection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResultCode FaceDetection </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pRecognizer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>jpgData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imageLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CSResultVal *&#160;</td>
+          <td class="paramname"><em>csresult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>얼굴 검출 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRecognizer</td><td>클래스 인스턴스 포인터 </td></tr>
+    <tr><td class="paramname">jpgData</td><td>이미지 </td></tr>
+    <tr><td class="paramname">imageLen</td><td>이미지 바이트 길이 </td></tr>
+    <tr><td class="paramname">csResult</td><td>결과를 저장할 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공시 1, 실패시 에러코드를 반환 (ResultCode) </dd></dl>
+
+</div>
+</div>
+<a id="a9b28664fc39af40ddc10c63b9953226a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b28664fc39af40ddc10c63b9953226a">&#9670;&nbsp;</a></span>FaceExtraction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResultCode FaceExtraction </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pRecognizer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>jpgData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imageLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CSResultVal *&#160;</td>
+          <td class="paramname"><em>csresult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>embedding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>embedding_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isCropped</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Feature 추출 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRecognizer</td><td>클래스 인스턴스 포인터 </td></tr>
+    <tr><td class="paramname">jpgData</td><td>이미지 데이터 </td></tr>
+    <tr><td class="paramname">imageLen</td><td>데이터 바이트 크기 </td></tr>
+    <tr><td class="paramname">retValue</td><td>리턴할 결과 값 - 임베딩이 포함 안됨 </td></tr>
+    <tr><td class="paramname">embedding</td><td>임베딩 값 </td></tr>
+    <tr><td class="paramname">embedding_size</td><td>임베딩 크기 &ndash; fixme 512인지 검증 필요. </td></tr>
+    <tr><td class="paramname">isCropped</td><td>이미 BoundBox로 Align 된 이미지인지 여부. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공 시 1, 실패시 에러 코드를 반환한다.(ResultCode) </dd></dl>
+
+</div>
+</div>
+<a id="a61a04aaba6cac7acb8f564865dc56122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a04aaba6cac7acb8f564865dc56122">&#9670;&nbsp;</a></span>GetConfigValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* GetConfigValue </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pRecognizer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb6e328f0e0b6e646f1162777571a3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6e328f0e0b6e646f1162777571a3e0">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Init </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pRecognizer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>root_dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>config_filepath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gallery, model, config로드 등 SDK를 초기화 한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRecognizer</td><td>CreateCURecognizer에서 생성한 객체 포인터 </td></tr>
+    <tr><td class="paramname">root_dir</td><td>sdk위치 경로 </td></tr>
+    <tr><td class="paramname">config_filepath</td><td>FaceSample.json경로 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f3bc90b285afe26ef914d465469bb5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3bc90b285afe26ef914d465469bb5d">&#9670;&nbsp;</a></span>MatchFeature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MatchFeature </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pRecognizer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>srcFeature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcFeatureLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>destFeature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destFeatureLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Feature 매칭 </p>
+<p>입력 인자로 넘겨진 두 이미지의 유사도를 구한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRecognizer</td><td>CreateCURecognizer에서 생성한 객체 포인터 </td></tr>
+    <tr><td class="paramname">srcFeature</td><td>비교 대상 이미지1 데이터 </td></tr>
+    <tr><td class="paramname">srcFeatureLen</td><td>비교 대상 이미지1 데이터의 크기 </td></tr>
+    <tr><td class="paramname">destFeature</td><td>비교 대상 이미지2 데이터 </td></tr>
+    <tr><td class="paramname">destFeatureLen</td><td>비교 대상 이미지2 데이터의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>float 이미지1과 이미지2의 유사 점수 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">변수 문서화</h2>
+<a id="a19086921dddd78c83650880e1e870d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19086921dddd78c83650880e1e870d9d">&#9670;&nbsp;</a></span>NS_CU_USING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NS_CU_USING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47435e729cbc451ad4c238d7d6bae3e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47435e729cbc451ad4c238d7d6bae3e1">&#9670;&nbsp;</a></span>TEMPLATE_EMBEDDING_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TEMPLATE_EMBEDDING_SIZE = sizeof(FaceExtractResult::embedding) / sizeof(float)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51b71aa8ec6dbee15d0522e69b2cabe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b71aa8ec6dbee15d0522e69b2cabe2">&#9670;&nbsp;</a></span>TEMPLATE_HEADER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TEMPLATE_HEADER_SIZE = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00f062b3649a285153fb1b9506d338ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f062b3649a285153fb1b9506d338ed">&#9670;&nbsp;</a></span>TEMPLATE_META_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TEMPLATE_META_SIZE = 5 + 3 + 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd8a269d61c49460c2051718eb40c729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8a269d61c49460c2051718eb40c729">&#9670;&nbsp;</a></span>TEMPLATE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TEMPLATE_SIZE = (<a class="el" href="_c_u_face_sdk_client_8cpp.html#a00f062b3649a285153fb1b9506d338ed">TEMPLATE_META_SIZE</a> + <a class="el" href="_c_u_face_sdk_client_8cpp.html#a47435e729cbc451ad4c238d7d6bae3e1">TEMPLATE_EMBEDDING_SIZE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_c_u_face_sdk_client_8cpp.html">CUFaceSdkClient.cpp</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
