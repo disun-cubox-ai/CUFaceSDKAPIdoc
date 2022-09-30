@@ -17,10 +17,5 @@ var _c_u_face_sdk_client_8cpp =
     [ "FaceExtraction", "_c_u_face_sdk_client_8cpp.html#a9b28664fc39af40ddc10c63b9953226a", null ],
     [ "GetConfigValue", "_c_u_face_sdk_client_8cpp.html#a61a04aaba6cac7acb8f564865dc56122", null ],
     [ "Init", "_c_u_face_sdk_client_8cpp.html#afb6e328f0e0b6e646f1162777571a3e0", null ],
-    [ "MatchFeature", "_c_u_face_sdk_client_8cpp.html#a7f3bc90b285afe26ef914d465469bb5d", null ],
-    [ "NS_CU_USING", "_c_u_face_sdk_client_8cpp.html#a19086921dddd78c83650880e1e870d9d", null ],
-    [ "TEMPLATE_EMBEDDING_SIZE", "_c_u_face_sdk_client_8cpp.html#a47435e729cbc451ad4c238d7d6bae3e1", null ],
-    [ "TEMPLATE_HEADER_SIZE", "_c_u_face_sdk_client_8cpp.html#a51b71aa8ec6dbee15d0522e69b2cabe2", null ],
-    [ "TEMPLATE_META_SIZE", "_c_u_face_sdk_client_8cpp.html#a00f062b3649a285153fb1b9506d338ed", null ],
-    [ "TEMPLATE_SIZE", "_c_u_face_sdk_client_8cpp.html#acd8a269d61c49460c2051718eb40c729", null ]
+    [ "MatchFeature", "_c_u_face_sdk_client_8cpp.html#a7f3bc90b285afe26ef914d465469bb5d", null ]
 ];
